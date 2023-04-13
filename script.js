@@ -1,7 +1,8 @@
 const container = document.querySelector(".container");
 const optionsContainer = document.querySelector(".options-container");
 // "de" stands for germany
-const country = "us";
+//const country = "us";
+let country = "us";
 const options = ["general", "entertainment", "health", "science", "sports", "technology", "business"];
 
 // 100 requests per day
@@ -66,6 +67,12 @@ const init = () => {
     optionsContainer.innerHTML = "";
     getNews();
     createOptions();
+    const countrySelect = document.getElementById("country-select");
+    countrySelect.addEventListener("change", (event) => {
+    country = event.target.value;
+    requestURL = `https://newsapi.org/v2/top-headlines?country=${country}&category=general&apiKey=${apiKey}`;
+    getNews();
+    });
 };
 
 // load full website before request the data

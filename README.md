@@ -1,13 +1,17 @@
 # News Web App
 
-This is a JavaScript web application that fetches news using the NewsAPI.org API and displays them on a web application with different subtopics. This web app allows you to select a subtopic and view the latest news articles for that subtopic.
+This is a JavaScript web application that fetches news using the NewsAPI.org API and displays them on a web application with different subtopics. This web app allows you to select a subtopic and view the latest news articles for that subtopic and additionally lets you select country specific news.
 
 ## Features
 
-Fetches news articles using the NewsAPI.org API
-Displays news articles on a modern and esthetic web application
-Allows users to select a subtopic to view news articles for that topic
-Uses a clean and modern font and color scheme to create an aesthetically pleasing user experience
+* Fetches news articles using the NewsAPI.org API
+* Displays news articles on a modern and esthetic web application
+* Allows users to select a subtopic and countries to view news articles for that topic and country
+* Uses a clean and modern font and color scheme to create an aesthetically pleasing user experience
+
+## Preview
+
+![alt text](images/news-app-preview.jpeg "Preview of the start page of the news app.")
 
 ## Installation
 
